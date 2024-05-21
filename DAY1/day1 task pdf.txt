@@ -1,0 +1,341 @@
+Que-1)
+______
+What is the precedence of arithmetic operators (from highest to lowest)?
+a) %, *, /, +, –
+b) %, +, /, *, –
+c) +, -, %, *, /
+d) %, +, -, *, /
+
+______________________
+Que-2)
+_______
+Which of the following is not an arithmetic operation?
+a) a * = 10;
+b) a / = 10;
+c) a ! = 10;
+d) a % = 10;
+______________________
+Que-3)
+_______
+Which of the following data type will throw an error on modulus operation(%)?
+a) char
+b) short
+c) int
+d) float
+
+_______________________
+Que-4)
+_______
+ Which among the following are the fundamental arithmetic operators, i.e, performing the desired operation can be done using that operator only?
+a) +, –
+b) +, -, %
+c) +, -, *, /
+d) +, -, *, /, %
+
+______________________
+Que-5)
+_______
+What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        int a = 10;
+        double b = 5.6;
+        int c;
+        c = a + b;
+        printf("%d", c);
+    }
+a) 15
+b) 16
+c) 15.6
+d) 10
+
+___________________
+Que-6)
+______
+What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        int a = 10, b = 5, c = 5;
+        int d;
+        d = a == (b + c);
+        printf("%d", d);
+    }
+a) Syntax error
+b) 1
+c) 10
+d) 5
+__________________
+Que-7)
+_____
+What will be correct output:
+
+#include <stdio.h>
+int main()
+{
+    double p = 7.2;
+    int q = 4;
+    double r;
+    r = p * q;
+    printf("%.1f", r);
+    return 0;
+}
+
+A) 29.0
+B) 28.8
+C) Compilation Error
+D) 4
+E) 7.2
+_________________
+Que-8) 
+____
+#include <stdio.h>
+int main()
+{
+    int m = 9;
+    double n = 2.5;
+    double p;
+    p = m / n;
+    printf("%.2f", p);
+    return 0;
+}
+
+A) 3.60
+B) 3.0
+C) Compilation Error
+D) 2.25
+E) 2.50
+________________
+Que-9)
+______
+What will be the output of the following code?
+
+#include <stdio.h>
+int main()
+{
+    int x = 7, y = 3, z = 4;
+    int result;
+    result = x != (y + z);
+    printf("%d", result);
+    return 0;
+}
+
+A) 0
+B) 1
+C) Compilation Error
+D) 10
+E) -1
+________________
+Que-10)
+_____
+What will be the output of the following C code?
+
+#include <stdio.h>
+int main()
+{
+    int p = 12, q = 6, r = 7;
+    int res;
+    res = p > (q + r);
+    printf("%d", res);
+    return 0;
+}
+
+A) 1
+B) 0
+C) Compilation Error
+D) 25
+E) -1
+________________
+Que-11)
+_____
+What will be the output of the following  code?
+#include <stdio.h>
+int main()
+{
+    int m = 8, n = 4, p = 5;
+    int result;
+    result = m <= (n * p);
+    printf("%d", result);
+    return 0;
+}
+
+A) 0
+B) 1
+C) Compilation Error
+D) 20
+E) -1
+______________
+Que-12)
+_____
+This syntax is suitable for which compiler 
+
+#include<stdio.h>
+int main()
+{
+  printf("hello everyone");
+  return 0;
+}
+
+A) Dev c
+B) Turbo c
+C) Online Compiler
+D) a and b
+E) a and c
+F) b and c
+___________________
+Programming Question
+----------------------
+Que-1) 
+_____
+Write a c program to round off the number to it's 
+previous multiplication of 10.
+
+Input as:13
+Output as:10
+
+pgm:
+#include<stdio.h>
+int main(){
+	int a=13;
+	printf("%d",(a/10)*10);
+	return 0;
+}
+
+o/p:
+10
+
+-----------------------------------------------
+Que-2)
+____
+Write a c program to add ,substraction and multiplication
+and divide by given number;
+
+pgm:
+#include<stdio.h>
+int main(){
+	int a,b, c;
+	printf("Enter the a value:");
+	scanf("%d",&a);
+	printf("Enter the b value:");
+	scanf("%d",&b);
+	c=a+b;
+	printf("sum of two numbers is:%d \n",c);
+	c=a-b;
+	printf("sub of two numbers is:%d \n",c);
+	c=a*b;
+	printf("multiplication of two numbers is:%d \n",c);
+	c=a/b;
+	printf("division of two numbers is:%d \n",c);
+	return 0;
+	
+}
+
+o/p:
+Enter the a value:4
+Enter the b value:2
+sum of two numbers:6
+sub of two numbers:2
+multiplication of two numbers is:8
+division of two numbers is:2
+-----------------------------------------------
+Que-3) 
+____
+Wirte a c program to swap two number by using third 
+varaible?
+pgm:#include<stdio.h>
+#include<conio.h>
+int main(){
+	int var1,var2,temp;
+	printf("Enter the var1 value:");
+	scanf("%d",&var1);
+	printf("Enter the var2 value:");
+	scanf("%d",&var2);
+	printf("numbers before swapping:%d %d\n",var1,var2);
+	temp=var1;
+	var1=var2;
+	var2=temp;
+	printf("numbers after swapping:%d %d\n",var1,var2);
+	return 0;
+}
+o/p:
+Enter the var1 value:23
+Enter the var2 value:32
+numbers before swapping:23 32
+numbers after swapping:32 23
+}
+Que-4
+
+write a c program to swap 2 numbers without using 3rd variable input as int a=1, int b=2 output as a=2 ,b=1 and c=1
+
+pgm:
+
+#include<stdio.h>
+int main(){
+	int a=1,b=2,c;
+	printf("before swapping a=%d b=%d \n",a,b);
+	b=b-a;
+	a=a+b;
+	c=a-b;
+	printf("after swapping a=%db=%d",a,b); 
+	return 0;
+}
+	
+o/p:
+before swapping a=1 b=2
+after swapping a=2 b=1
+ 
+Que5
+
+write c program to round of a number to it's next multiplication of 10 input as a=23, output as 30
+input as a=65, output as 75
+
+Que6
+
+write a c program to sum of two numbers without using + operatord
+pgm:
+#include<stdio.h>
+#include<conio.h>
+int main(){
+	int num1,num2,i;
+	printf("enter the first num1:");
+	scanf("%d", &num1);
+	printf("enter the second num2:");
+	scanf("%d",&num2);
+	for(i=0;i<num2;i++){
+		num1++;
+	}
+	printf("sum of two numbers:%d",num1);
+	getch();
+	return 0;
+	}
+o/p:
+enter the first num1:23
+enter the second num2:56
+sum of two numbers:79
+
+1.a
+2.c
+3.a
+4.?
+5.a
+6.b
+9.a
+10.b
+11.b
+12.d
+programming questions
+1.a=10
+2.Enter the a value:4
+  enter the b vqlue:2
+  sum =6
+  sub =2
+  mul =8
+  div =2
+3.Enter the var1 value:4
+  Enter the var2 value:5
+  Numbers before swapping:a=4 b=5
+  Numbers after swapping: a=5 b=4
+

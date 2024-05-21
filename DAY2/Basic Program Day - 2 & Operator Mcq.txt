@@ -1,0 +1,361 @@
++1) What is the value of a after executing the following code?
+
+int a = 5;
+a += 3 * 2;
+
+A.11
+B.16
+C.30
+D.15
+E.14
+
+
+2)What will be the output of the below program?
+int main() {
+int a = 5;
+int b = 10;
+int c = 15;
+int result = a++ * ++b - --c;
+printf(“result = %d\n”, result);
+return 0;
+}
+
+A.result = 36
+B.result = 41
+C.result = 35
+D.result = 90
+E.result = 91
+
+
+3)What will be the output of the following code snippet?
+
+#include<stdio.h>
+int main() {
+int x = 3;
+int y = 2;
+int z = x++ * (x + y) - y--;
+printf(“z = %d\n”, z);
+return 0;
+}
+
+A.z = 22
+B.z = 23
+C.z = 16
+D.z = 7
+E.z = 20
+
+
+4)What will be the output of the following code snippet?
+
+#include<stdio.h>
+int main() {
+int x = 10;
+int y = 5;
+int z = x---y;
+printf(“x = %d, y = %d, z = %d\n”, x, y, z);
+return 0;
+}
+
+A.x = 9, y = 5, z = 5
+B.x = 9, y = 4, z = 5
+C.x = 9, y = 5, z = 4
+D.Compiler Error
+E.None
+
+
+5)What will be the output of the following code snippet?
+
+include
+int main() {
+int x = 3;
+int y = 2;
+int z = x++ * (x + y) - --y;
+printf(“z = %d\n”, z);
+return 0;
+}
+
+A.z = 22
+B.z = 23
+C.z = 16
+D.z = 17
+E.z = 20
+
+
+6)What will be the output of the following code snippet?
+
+#include<stdio.h>
+int main() {
+int x = 15;
+int y = 2;
+int z = x / y + x % y;
+printf(“z = %d\n”, z);
+return 0;
+}
+
+A.z = 7
+B.z = 8
+C.z = 9
+D.z = 14
+E.z = 15
+
+
+7)What will be the output of the following code snippet?
+
+#include<stdio.h>
+int main() {
+int a = 10;
+int b = 20;
+int result = (a > b) && (b < a++) || (a++ < b);
+printf(“result = %d\n”, result);
+return 0;
+}
+
+A.result = 0
+B.result = 1
+C.result = 2
+D.result = 3
+E.result = 4
+
+
+8)What will be the output of the following code snippet?
+
+#include<stdio.h>
+int main() {
+int a = 1, b = 2, c = 3;
+int result = a++ + ++b + c-- - --c + ++a + b-- + a-- - b;
+printf(“result = %d\n”, result);return 0;
+}
+
+A.result = 8
+B.result = 11
+C.result = 12
+D.result = 13
+E.result = 14
+
+
+9)What will be the output of the following code snippet?
+
+#include<stdio.h>
+int main() {
+int a = 10;
+int b = 15;
+int c = a+++b--;
+printf(“a = %d, b = %d, c = %d\n”, a, b, c);
+return 0;
+}
+
+A.a = 11, b = 14, c = 25
+B.a = 12, b = 13, c = 25
+C.a = 11, b = 13, c = 25
+D.a = 12, b = 14, c = 23
+E.a = 12, b = 14, c = 24
+
+
+10)What will be the output of the following code snippet?
+
+#include<stdio.h>
+int main() {
+int a = 10, b = 20, c = 10;
+int result = (a > b) || (b == c) && (c != a);
+printf(“result = %d\n”, result);
+return 0;
+}
+
+A.result = 0
+B.result = 1
+C.result = 2
+D.result = 3
+E.result = 4
+
+
+11)What will be the output of the following code snippet?
+
+#include<stdio.h>
+int main() {
+int a = 5, b = 10, c = 15;
+int result = !(a <= b) && !(b != c) && !(c >= a);
+printf(“result = %d\n”, result);
+return 0;
+}
+
+A.result = 0
+B.result = 1
+C.result = 2
+D.result = 3
+E.result = 4
+
+
+12)What will be the output of the following code snippet?
+
+#include<stdio.h>
+int main() {
+int a = 15, b = 4, c = 3;
+int result = (a + b) % c * b;
+printf(“result = %d\n”, result);
+return 0;
+}
+A.result = 8
+B.result = 7
+C.result = 4
+D.result = 5
+E.result = 6
+
+
+13)What will be the output of the following C code?
+
+#include<stdio.h>
+int main() {
+int a = 3;
+int b = 4;
+int result = (a += b) * (b -= 2);
+printf(“result = %d\n”, result);
+return 0;
+}
+
+A.result = 10
+B.result = 12
+C.result = 15
+D.result = 14
+E.result = 16
+
+14)What will be the data type of the variable result if the following line of code is used?
+
+float result = 3 / 2;
+
+A.1.0
+B.1
+C.1.5
+D.compilation error
+E.2
+
+
+15)Which printf statement will correctly print the value of the variable count as a character?
+
+A.printf(“Count: %c”, count);
+B.printf(“Count: %d”, count);
+C.printf(“Count: %f”, count);
+D.printf(“Count: %s”, count);
+E.None
+
+Programming Questions
+------------------------
+Ques-1
+___________
+Write a C program to find the next multiple of 100 of a given three digit number . The given number is 234 and the output is 300.
+
+Anw
+#include<stdio.h>
+#include<conio.h>
+int main(){
+	int n;
+	printf("Enter the n value:");
+	scanf("%d",&n);
+	printf("%d",n+(100-n%100));
+	return 0;
+}
+
+o\p:
+Enter the n value:234
+300
+
+Ques-2
+___________
+Write a C program to reverse aa two digit number without using any loop.The given number is 13 and the output is 31.
+
+pgm:
+#include<stdio.h>
+#include<conio.h>
+int main(){
+	int a=13;
+	printf("%d%d",a%10,a/10);
+	return 0;
+}
+
+o/p:31
+
+Ques-3
+____________
+Write a c program to find the next multiple of 10 of a given two digit number, if the given number's last digit is less than 5 then 
+find the previous multiple of 10 and if the given number's last digit is greater than or equal to 5 then find the next multiple of 10.
+[Dont use if else or ternary operator ]
+
+pgm
+
+#include<stdio.h>
+#include<conio.h>
+main(){
+int a;
+printf("enter the a value:");
+scanf("%d" ,&a);
+printf("%d",((a/10)+((a%10)/5))*10);
+return 0;
+}
+
+o/p:
+enter the a value:23
+20
+
+Ques-4
+______________
+A shopkeeper buys a TV set for Rs. 3500 and sells it at a profit of 27%. Apart from this a VAT of 12.7% and Service Charge is 3.87% is charged. 
+Write a C program to Display total selling price, profit along with vat and service charge.
+
+To calculate the  selling price, profit, VAT, and service charge, follow these steps:
+
+1) Calculate the selling price:
+   Selling Price = Cost Price + Profit
+   Selling Price = Rs. 3500 + (27% of Rs. 3500)
+
+2) Calculate the profit:
+   Profit = Selling Price - Cost Price
+
+3) Calculate VAT:
+   VAT = 12.7% of Selling Price
+
+4) Calculate Service Charge:
+   Service Charge = 3.87% of Selling Price
+
+
+ANSWERS
+DAY-2(TASK)-17Aug2023
+
+MCQ
+1.b?
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int a=5;
+a+=3*2;
+printf("%d",a);
+ return 0;	
+}
+O/p:6
+2.b
+3.c
+4.a
+5.a
+6.a
+7.b
+8.d
+#include<stdio.h>
+#include<conio.h>
+int main(){
+	int a=1,b=2,c=3;
+	int result=a++ + ++b + c-- - --c + ++a + b-- + a-- - b;
+	printf("result:%d",result);
+	return 0;
+}
+o/p:
+result = 13
+9.a
+10.a
+11.a
+12.b
+13.d
+14.c
+15.a
+
+
+
+

@@ -1,0 +1,301 @@
+Ques-1
+---------
+Question: 16
+What will be the output of the following C code?
+
+int main() {
+int x = 5;
+float y = 3.5;
+int result = x + (int)y;
+printf(“Result: %d\n”, result);
+return 0;
+}
+
+
+
+a) Result: 8.5
+b) Result: 8
+c) Result: 3.5
+d) Result: 5
+e) Result: 7
+
+Ques-2
+------------
+What is the value of the expression 10 + 5 * 2/4 - 3in C?
+
+a) 7
+b) 9
+c) 1
+d) 4
+e) 15
+
+Ques-3
+--------------
+Which of the following is a valid C identifier?
+
+a) 123name
+b) _name
+c) my-name
+d) %name
+e) None
+
+Ques-4
+-----------
+What will be the output of the following C code?
+
+int main() {
+int x = 5;
+int y = 3;
+x += y++;
+y -= x--;
+printf(“x = %d, y = %d\n”, x, y);
+return 0;
+}
+
+
+a) x = 6, y = 2
+b) x = 8, y = -4
+c) x = 7, y = -4
+d) x = 5, y = 3
+e) None
+
+Ques-5
+-----------
+What will be the output of the entire code?
+
+void main()
+{
+ printf(“%d\n%d\n %d”, -5/2,5/-2,-5/-2);
+}
+
+a) -2, -2, 2
+b) -2, 2, 2
+c) -2, -3, 2
+d) -2, 2, -2
+e) 2,-2,-2
+
+Ques-6
+--------------
+What will be the value of the variable result after the following code execution?
+
+float a = 7.5;
+int b = 2;
+float result = a / b;
+
+
+
+a) 3.75
+b) 3.0
+c) 3.5
+d) 3
+e) garbage value
+
+Ques-7
+------------
+What will be the output ?
+
+void main() {
+int n = 123;
+printf(“%d”, n % 10);
+n = n / 10;
+printf(“%d %d”, n % 10, n / 10);
+}
+
+a) 32 1
+b) 321
+c) 123
+d) 1
+e) None
+
+Ques-8
+-------------
+void main() {
+
+printf("%d ", 2 + 3 * 4 + 5 == 45);
+printf("%d ", 2 + 3 * 4 + 5 == 19);
+printf("%d ", (2 + 3) * (4 + 5) == 45);
+}
+
+
+
+a) 1 0 1
+b) 1 1 0
+c) 0 0 1
+d) 0 1 1
+e) None
+
+Ques-9
+--------
+What will be the output of the following C code?
+
+void main() {
+int a = 1, b = 4, c = 10;
+c = a = 10 == b + 6;
+printf(“a=%d, b=%d, c=%d”, a, b, c);
+}
+
+a) a=10, b=4, c=1
+b) a=1, b=4, c=0
+c) a=0, b=10, c=1
+d) Compiler Error
+e) a=1, b=4, c=1
+
+Ques-10
+----------------
+
+void main() {
+printf(“%d “, 5 && 3);
+printf(“%d “, 0 || -3);
+}
+
+
+a) 0 0
+b) 1 1
+c) 1 0
+d) 0 1
+e) 0 2
+
+Ques-11
+----------------
+
+void main() {
+int a = 1, b;
+b = a++ + a++ + a++;
+printf(“a=%d, b=%d\n”, a, b);
+a = 1;
+b = ++a + ++a + ++a;
+printf(“a=%d, b=%d”, a, b);
+}
+
+
+
+a) a=4, b=6
+   a=4, b=9
+
+b) a=6, b=1
+   a=6, b=6
+
+
+c) a=4, b=6
+   a=4, b=10
+
+d) a=1, b=1
+   a=1, b=1
+
+Ques-12
+--------------
+What will be the output ?
+float a = 5/2;
+float b = 5/2.0;
+float c = 5.0/2;
+float d = 5.0/2.0;
+
+
+
+a) a=2.5, b=2.5, c=2.5, d=2.5
+b) a=2, b=2.5, c=2.5, d=2.5
+c) a=2.0, b=2.5, c=2.5, d=2.5
+d) a=2.0, b=2.0, c=2.5, d=2.0
+e) None
+
+Ques-13
+---------------
+What will be the output of the following C code?
+
+#include <stdio.h>
+void main()
+{
+    int x = 1, y = 0, z = 5;
+    int a = x && y && z++;
+    printf("%d", z);
+}
+
+
+a) 5
+b) 1
+c) 0
+d) 6
+
+Ques-14
+--------------
+What will be the output of the following C code?
+
+#include <stdio.h>
+void main()
+{
+    int a = 3;
+    int b = a++ + ++a + --a;
+    printf("Value of b is %d", b);
+}
+
+
+a) Value of x is 12
+b) Value of x is 13
+c) Value of x is 10
+d) Undefined behaviour
+
+Programs
+____________________
+Ques - 1
+-----------
+Write a C program to reverse 3 digit number without using any loops. Given number is 786 and expected output is 687.
+
+Ques - 2
+--------------
+Write a C program to calculate and print the area of a square and rectangle.
+Side of square is : 5
+Length and breadth of rectanngle is : 4 , 5
+
+
+Mcq's Anws
+
+DAY-3(TASK)-18 AUG 2023
+1.b
+2.b
+3.b
+4.c
+5.a
+6.a
+7.a
+8.d
+9.e
+10.b
+11.a
+12.a
+13.a
+14.d
+
+
+Programming questions
+que1:
+#include<stdio.h>
+#include<conio.h>
+int main(){
+	int a,n;
+	printf("Enter the 3 digit value of a:");
+	scanf("%d",&a);
+	printf("reverse of given number:%d",a%10);
+	n=a/10;
+	printf("%d%d",n%10,n/10);
+	return 0;
+}
+o/p:
+Enter the 3 digit value of a:786
+reverse of the given number:687
+
+que2:
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int a=5,b=4,l=5,square,rectangle;
+square=a*a;
+printf("area of the sqare :%d\n",square);
+rectangle=l*b;
+printf("area of the rectangle:%d",rectangle);
+return 0;
+}
+
+o/p:
+area of the square:25
+area of the rectangle:20
